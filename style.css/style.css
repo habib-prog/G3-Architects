@@ -26,6 +26,10 @@
 
 
   /* header style */
+  .brand{
+    font-weight: 700;
+    font-size: 3rem;
+  }
 
 
 
@@ -43,10 +47,32 @@
   }
   .nav-bar{
     justify-content: space-between;
+    align-items: center;
   }
 
   .nav-bar, .banner{
     max-width: 1440px;
     margin: 0 auto;
-    
+
+  }
+
+  /* BAnner Styles */
+  .banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .btn-primary{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: white;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
   }
