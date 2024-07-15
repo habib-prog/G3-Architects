@@ -117,7 +117,7 @@
 
   
 
-  /* Responsives */
+  /* Responsive */
 
   @media screen and (max-width: 576px){
     .nav-bar, .nav-link, .teams{
@@ -143,6 +143,6 @@
       flex-direction: column;
     }
     .our-features{
-      margin: 50px auto;
+      margin: 50px auto; 
     }
   }
