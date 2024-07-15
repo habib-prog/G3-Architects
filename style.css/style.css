@@ -9,6 +9,10 @@
   /* shared styles */
   .display-flex{
     display: flex;
+    flex-direction: row;
+  }
+  main>section{
+    margin-top: 130px;
   }
 /* dark 02 */
   .text-gray{
@@ -76,14 +80,69 @@
     font-size: 1.25rem;
     border: none;
   }
+  main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .banner-img{
     width: 100%;
   }
 
+  /* Teams and features style */
+  .our-features{
+    width: 60%;
+  }
+.our-features{
+  margin-left: 130px;
+  max-width: 530px;
+}
+.feature-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick{
+  font-weight: 500;
+}
+#features-{
+  color:  rgb(255, 144, 14);
+  font-weight: 700;
+}
+
+
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+
+  
+
   /* Responsive */
 
   @media screen and (max-width: 576px){
-    .nav-bar, .nav-link{
+    .nav-bar, .nav-link, .teams{
         flex-direction: column;
+    }
+    .team-img-container{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+      margin-left: 0 ;
+      margin-right: 0;
+  
+      
+    }
+    .display-flex{
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+  @media screen and (min-width: 576px) and (max-width:992px){
+    .teams{
+      flex-direction: column;
+    }
+    .our-features{
+      margin: 50px auto;
     }
   }
